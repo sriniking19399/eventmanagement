@@ -118,8 +118,8 @@ public class EventJpaService implements EventRepository {
     @Override
     public List<Sponsor> getSponsorByEventId(int eventId) {
 
-         try {
-            Event event= eventJpaRepository.findById(eventId).get();
+        try {
+            Event event = eventJpaRepository.findById(eventId).get();
             return event.getSponsors();
 
         } catch (Exception e) {
